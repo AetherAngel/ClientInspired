@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\ClientExe\GameClient.exe
+C:\Users\Administrator\Desktop\ClientExe\GameClient.dll
+C:\Users\Administrator\Desktop\ClientExe\GameClient.deps.json
+C:\Users\Administrator\Desktop\ClientExe\GameClient.runtimeconfig.json
+C:\Users\Administrator\Desktop\ClientExe\GameClient.dll.config
+C:\Users\Administrator\Desktop\ClientExe\GameClient.pdb

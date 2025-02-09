@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameClient")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c32974a5e0148db387c1d8f44aa3e4f5e3b53941")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameClient")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameClient")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

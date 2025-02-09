@@ -19,3 +19,8 @@ C:\Users\Administrator\source\repos\GameClient\obj\Debug\net8.0-windows\GameClie
 C:\Users\Administrator\source\repos\GameClient\obj\Debug\net8.0-windows\ref\GameClient.dll
 C:\Users\Administrator\source\repos\GameClient\obj\Debug\net8.0-windows\GameClient_MarkupCompile.lref
 C:\Users\Administrator\source\repos\GameClient\obj\Debug\net8.0-windows\App.baml
+C:\Users\Administrator\source\repos\GameClient\obj\Debug\net8.0-windows\GameClient_Content.g.cs
+C:\Users\Administrator\source\repos\GameClient\bin\Debug\net8.0-windows\GameClient.dll.config
+C:\Users\Administrator\source\repos\GameClient\obj\Debug\net8.0-windows\GameClient.sourcelink.json
+C:\Users\Administrator\source\repos\GameClient\obj\Debug\net8.0-windows\MainPage.g.cs
+C:\Users\Administrator\source\repos\GameClient\obj\Debug\net8.0-windows\MainPage.baml

@@ -21,3 +21,4 @@ C:\Users\Administrator\source\repos\GameClient\obj\Release\net8.0-windows\GameCl
 C:\Users\Administrator\source\repos\GameClient\obj\Release\net8.0-windows\App.baml
 C:\Users\Administrator\source\repos\GameClient\bin\Release\net8.0-windows\GameClient.dll.config
 C:\Users\Administrator\source\repos\GameClient\obj\Release\net8.0-windows\GameClient_Content.g.cs
+C:\Users\Administrator\source\repos\GameClient\obj\Release\net8.0-windows\GameClient.sourcelink.json

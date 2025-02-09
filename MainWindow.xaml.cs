@@ -1,53 +1,52 @@
-﻿using GameClient;
+﻿using System.Reflection;
 using System.Windows;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 
 namespace GameClient
-
 {
     public partial class MainWindow : Window
     {
-
-        // Reinicia o vídeo automaticamente sem pausas
-        private void VideoPlayer_MediaEnded(object sender, RoutedEventArgs e)
-        {
-            VideoPlayer.Position = TimeSpan.Zero;
-            VideoPlayer.Play();
-        }
-
         public MainWindow()
         {
             InitializeComponent();
-            ResizeImage();
-            DataContext = new MainViewModel();
-
+            MainVideo.Play();
         }
 
-
-        // Método que pode ser chamado para redimensionar a imagem em tempo de execução
-        private void ResizeImage()
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            myImage.Width = 300;  // Novo valor para a largura
-            myImage.Height = 200; // Novo valor para a altura 
+            // Validação básica de login
+            if (UsernameTextBox.Text == "admin" && PasswordBox.Password == "1234")
+            {
+                // Esconde a tela de login
+                LoginScreen.Visibility = Visibility.Collapsed;
+
+                // Exibe o Frame para carregar a MainPage
+                MainFrame.Visibility = Visibility.Visible;
+
+                // Carrega a MainPage dentro do Frame
+                MainFrame.Navigate(new MainPage());
+
+                // Parar video de introdução ao entrar
+                MainVideo.Stop();
+            }
+            else
+            {
+                MessageBox.Show("Credenciais inválidas. Tente novamente.", "Erro de Login", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+        private void CreateAccountButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Redirecionando para a criação de conta.", "Informação", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void ForgotPasswordButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Redirecionando para recuperação de senha.", "Informação", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-            // Aqui você pode definir o comportamento de saída, como fechar a janela
-            Application.Current.Shutdown();
+            Application.Current.Shutdown(); // Fecha a aplicação completamente
         }
-
-        // No arquivo MainWindow.xaml.cs
-        private void TitleBar_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (e.ChangedButton == MouseButton.Left)
-            {
-                this.DragMove(); // Permite arrastar a janela
-            }
-        }
-    
-
     }
 }
